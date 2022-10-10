@@ -1,14 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap');
+
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
 
 body{
     background-image: linear-gradient(to bottom , white, #989898);
-    height: 609px;
+    height: 732px;
+    
+    margin: 0 auto;
 }
-#cookieClickMultiplier, #cookieClickMultiplier2, #cookieClickMultiplier3{
+#cookieClickMultiplier, #cookieClickMultiplier2, #cookieClickMultiplier3, #autoClickerButton{
     background-color: chocolate;
     color: white;
     border: 2px solid black;
     transition: 0.5s;
+    padding: 1em;
+    margin: 0 auto;
+    text-align: center;
 }
 #cookieClickMultiplier:hover{
    transform: scale(1.2);
@@ -16,20 +26,33 @@ body{
    background-color: white;
    transition: 0.5s;
    cursor: pointer;
-
+   margin: 0 auto;
+   display: block;
+   text-align: center;
 }
-
-* {
-    font-family: 'VT323', monospace;
-    user-select: none;
+#autoClickerButton:hover{
+    transform: scale(1.2);
+   color: chocolate;
+   background-color: white;
+   transition: 0.5s;
+   cursor: pointer;
+   margin: 0 auto;
+   display: block;
+   text-align: center;
 }
-
 
 h1 {
     text-align: center;
     color: black;
+    display: block;
    
 }
+button,  #counter{
+    margin: 0 auto;
+    display: block; 
+    text-align: center;
+}
+
 
 #cookie {
     max-width: 120px;
